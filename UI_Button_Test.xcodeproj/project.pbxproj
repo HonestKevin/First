@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		CC43EF021CA29B7400CEFEF9 /* 5.JPG in Resources */ = {isa = PBXBuildFile; fileRef = CC43EF011CA29B7400CEFEF9 /* 5.JPG */; };
 		CC43EF041CA29B7D00CEFEF9 /* ch.png in Resources */ = {isa = PBXBuildFile; fileRef = CC43EF031CA29B7D00CEFEF9 /* ch.png */; };
-		CC43EF061CA29B8C00CEFEF9 /* me.JPG in Resources */ = {isa = PBXBuildFile; fileRef = CC43EF051CA29B8C00CEFEF9 /* me.JPG */; };
+		CC43EF061CA29B8C00CEFEF9 /* me.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC43EF051CA29B8C00CEFEF9 /* me.jpg */; };
 		CCE9B3431CA15C4B008C64B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE9B3421CA15C4B008C64B6 /* main.m */; };
 		CCE9B3461CA15C4B008C64B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE9B3451CA15C4B008C64B6 /* AppDelegate.m */; };
 		CCE9B3491CA15C4B008C64B6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE9B3481CA15C4B008C64B6 /* ViewController.m */; };
@@ -44,7 +44,7 @@
 /* Begin PBXFileReference section */
 		CC43EF011CA29B7400CEFEF9 /* 5.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.JPG; sourceTree = "<group>"; };
 		CC43EF031CA29B7D00CEFEF9 /* ch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ch.png; sourceTree = "<group>"; };
-		CC43EF051CA29B8C00CEFEF9 /* me.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = me.JPG; sourceTree = "<group>"; };
+		CC43EF051CA29B8C00CEFEF9 /* me.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = me.jpg; sourceTree = "<group>"; };
 		CCE9B33E1CA15C4B008C64B6 /* UI_Button_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UI_Button_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE9B3421CA15C4B008C64B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CCE9B3441CA15C4B008C64B6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -137,7 +137,7 @@
 				CCE9B37A1CA17E84008C64B6 /* 4.jpg */,
 				CC43EF011CA29B7400CEFEF9 /* 5.JPG */,
 				CC43EF031CA29B7D00CEFEF9 /* ch.png */,
-				CC43EF051CA29B8C00CEFEF9 /* me.JPG */,
+				CC43EF051CA29B8C00CEFEF9 /* me.jpg */,
 				CCE9B3421CA15C4B008C64B6 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -266,7 +266,7 @@
 			files = (
 				CCE9B3791CA166D0008C64B6 /* 3.jpeg in Resources */,
 				CCE9B3511CA15C4B008C64B6 /* LaunchScreen.storyboard in Resources */,
-				CC43EF061CA29B8C00CEFEF9 /* me.JPG in Resources */,
+				CC43EF061CA29B8C00CEFEF9 /* me.jpg in Resources */,
 				CCE9B3751CA164D0008C64B6 /* 1.jpg in Resources */,
 				CCE9B34E1CA15C4B008C64B6 /* Assets.xcassets in Resources */,
 				CCE9B34C1CA15C4B008C64B6 /* Main.storyboard in Resources */,

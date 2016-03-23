@@ -19,12 +19,12 @@
     // Do any additional setup after loading the view, typically from a nib.
     UILabel *lb = [[UILabel alloc] init];
     [self.view addSubview:lb];
-    lb.frame = CGRectMake(40, 20, 100, 20);
+    lb.frame = CGRectMake(40, 20, 200, 20);
     lb.text = @"按钮1";
     lb.textColor = [UIColor lightGrayColor];
     UIButton *bt1 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [self.view addSubview:bt1];
-    bt1.frame = CGRectMake(40, 40, 100, 68);
+    bt1.frame = CGRectMake(40, 40, 200, 68);
     //    bt.backgroundColor = [UIColor redColor];
     //正常状态
     [bt1 setTitle:@"恭喜发财" forState:UIControlStateNormal];
@@ -42,37 +42,45 @@
     
     UILabel *lb2 = [[UILabel alloc] init];
     [self.view addSubview:lb2];
-    lb2.frame = CGRectMake(40, 120, 100, 20);
+    lb2.frame = CGRectMake(40, 120, 200, 20);
     lb2.text = @"按钮2（多次点击）";
     lb2.textColor = [UIColor blueColor];
     UIButton *bt2 = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.view addSubview:bt2];
-    bt2.frame=CGRectMake(40, 140, 100,68);
+    bt2.frame=CGRectMake(40, 140, 200,68);
     [bt2 setTitle:@"这是双击事件" forState:UIControlStateNormal];
     [bt2 setBackgroundImage:[UIImage imageNamed:@"3.jpeg"] forState:UIControlStateNormal];
 //    bt2.backgroundColor = [UIColor blackColor];
     //双击事件
     [bt2 addTarget:self action:@selector(exchange) forControlEvents:UIControlEventTouchDownRepeat];
     
+    //当按钮禁用的情况下,图像的颜色会被画深一点,默认为YES。
+    bt2.adjustsImageWhenDisabled = YES;
+    
+    //
     
     UILabel *lb3 = [[UILabel alloc] init];
     [self.view addSubview:lb3];
-    lb3.frame = CGRectMake(40, 220, 100, 20);
+    lb3.frame = CGRectMake(40, 220, 200, 20);
     lb3.text = @"按钮3（键内松开）";
     UIButton *bt3 = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.view addSubview:bt3];
     [bt3 setTitle:@"这是个键内松开触发事件按钮"  forState:UIControlStateNormal];
     [bt3 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    bt3.frame=CGRectMake(40,240, 100, 68);
+    bt3.frame=CGRectMake(40,240, 200, 68);
     [bt3 setBackgroundImage:[UIImage imageNamed:@"4.jpg"] forState:UIControlStateNormal];
     bt3.backgroundColor = [UIColor greenColor];
 //    bt3.alpha = 0.6;
+#if 0
     //在按钮内松开
     [bt3 addTarget:self action:@selector(upInside) forControlEvents:UIControlEventTouchUpInside];
+#else    //在按钮外松开
+    [bt3 addTarget:self action:@selector(upOutSide) forControlEvents:UIControlEventTouchUpOutside];
+#endif
     
     UILabel *lb4 = [[UILabel alloc] init];
     [self.view addSubview:lb4];
-    lb4.frame = CGRectMake(40, 320, 100, 20);
+    lb4.frame = CGRectMake(40, 320, 200, 20);
     lb4.text = @"按钮4";
     lb4.tintColor = [UIColor blackColor];
     
@@ -81,7 +89,7 @@
     bt4 = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.view addSubview:bt4];
     bt4.frame = CGRectMake(40, 340,180,300);
-    [bt4 setBackgroundImage:[UIImage imageNamed:@"/Users/qingyun/Desktop/百度云同步盘/xkw/Code/322/UI_Button_Test/UI_Button_Test/me.JPG"] forState:UIControlStateNormal];
+    [bt4 setBackgroundImage:[UIImage imageNamed:@"me.jpg"] forState:UIControlStateNormal];
     bt4.backgroundColor = [UIColor grayColor];
     [bt4 setTitle:@"陈宏" forState:UIControlStateNormal];
     [bt4 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
@@ -100,5 +108,9 @@
 - (void)upInside{
     NSLog(@"在按钮内松开");
     NSLog(@"当前类的类名为：%s",__func__);
+}
+- (void)upOutSide{
+    NSLog(@"在按钮内松开");
+    NSLog(@"类名为：%s",__func__);
 }
 @end
